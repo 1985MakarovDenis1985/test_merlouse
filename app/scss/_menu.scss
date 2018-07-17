@@ -1,0 +1,128 @@
+.menu_box{
+	display: block;
+}
+
+//
+	.menu{
+		width: 1920px;
+		height: 130px;
+		background: black;
+		border-top: 5px solid red;
+		border-bottom: 5px solid red;
+    @media screen and (max-width: 1440px){
+      width: 1440px;
+    }
+	}
+//
+		.menu_item{
+			display: inline-block;
+			width: 380px;
+			height: 130px;
+			background-size: cover;
+      @media screen and (max-width: 1440px){
+        width: 284px;
+      }
+		}
+
+					.menu_item>p:hover{
+						background: rgba(0,0,0,0.1);
+						cursor: pointer;
+					}
+
+					.menu_item>p{
+						position: absolute;
+						display: block;
+						width: 380px;
+						height: 85px;
+						background: rgba(0,0,0,0.7);
+						color: white;
+						font-size: 30pt;
+						text-align: center;
+						padding-top: 45px;
+	  				font-family: 'Montserrat-ExtraLight';
+	  				transition: background 1s;
+              @media screen and (max-width: 1440px){
+                width: 285px;
+              }
+					}
+//
+//
+			.menu_first{
+				background-image: url(../img/breakfast_menu.png);
+			}
+//
+			.menu_second{
+				background-image: url(../img/borh.png);
+			}
+
+			.menu_third{
+				background-image: url(../img/fish_menu.png);
+			}
+
+			.menu_fourth{
+				background-image: url(../img/desert_menu.png);
+			}
+
+			.menu_fifth{
+				background-image: url(../img/coffee_menu.png);
+				width: 383px;
+			}
+
+
+
+
+.menu_box_wrap{
+  width: 1920px;
+  height: 370px;
+  background-image: url(../img/footer.png);
+  position: absolute;
+  z-index: -10;
+  animation-name: menu;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  overflow: hidden;
+  @media screen and (max-width: 1440px){
+    width: 1440px;
+  }
+}
+// @keyframes menu {
+//   from{
+//     height: 1px;
+//   }
+//   to{
+//     height: 350px;
+//   }
+// }
+
+
+
+
+
+
+
+  // .o:hover ~ .p{
+  //   margin-left: 0px;
+  //   transform: skewX(0deg);
+  //
+  // }
+  //
+  //
+  //     .p{
+  //       transition: 1s;
+  //       width: 300px;
+  //       height: 130px;
+  //       background: red;
+  //       position: absolute;
+  //       margin-top: 130px;
+  //       margin-left: -300px;
+  //       transform: skewX(-45deg);
+  //     }
+  //
+  //     .l{
+  //       width: 300px;
+  //       height: 40px;
+  //       background: green;
+  //       transform: skewX(45deg);
+  //     }
