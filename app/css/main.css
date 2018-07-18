@@ -768,6 +768,40 @@ a {
   background-image: url(../img/m5_4.png) !important;
 }
 
+.cost_box {
+  width: 1920px;
+  height: 120px;
+  background: rgba(0, 0, 0, 0.6);
+  margin-top: 249px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-family: 'Montserrat-Light';
+  color: white;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cost_box_left {
+  width: 25%;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  font-size: 25pt;
+  padding-top: 40px;
+}
+
+.cost_box_right {
+  padding: 20px;
+  overflow: hidden;
+  width: 75%;
+  font-size: 14pt;
+}
+
 .undermenu {
   width: 1920px;
   height: 400px;
@@ -838,6 +872,14 @@ a {
   .p_picture_20 {
     width: 1440px !important;
     margin-left: -1155px !important;
+  }
+
+  .cost_box {
+    width: 1440px;
+  }
+
+  .cost_box_right {
+    font-size: 11pt;
   }
 }
 

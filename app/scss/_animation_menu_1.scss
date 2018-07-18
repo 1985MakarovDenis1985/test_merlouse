@@ -352,4 +352,38 @@
 
 
 
-// P
+// cost
+
+
+.cost_box{
+  width: 1920px;
+  height: 120px;
+  background: rgba(0,0,0,0.6);
+  margin-top: 249px;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat-Light';
+  color: white;
+  box-sizing: border-box;
+  @media screen and (max-width: 1440px){
+    width: 1440px;
+  }
+}
+.cost_box_left{
+  width: 25%;
+  height: 80px;
+  background: rgba(0,0,0,0.7);
+  text-align: center;
+  font-size: 25pt;
+  padding-top: 40px;
+}
+
+.cost_box_right{
+  padding: 20px;
+  overflow: hidden;
+  width: 75%;
+  font-size: 14pt;
+  @media screen and (max-width: 1440px){
+    font-size: 11pt;
+  }
+}
