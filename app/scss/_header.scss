@@ -22,7 +22,7 @@
 .wrap_header {
   position: absolute;
   width: 1920px;
-  height: 820px;
+  height: 580px;
   background: url("../img/shadow.png");
   @media screen and (max-width: 1440px) {
     width: 1440px;
@@ -47,7 +47,7 @@
 
 .header {
   width: 1920px;
-  height: 820px;
+  height: 580px;
   background-image: url("../img/food_first.png");
   @media screen and (max-width: 1440px) {
     width: 1440px;
@@ -177,7 +177,7 @@
 .header_logo {
   width: 270px;
   display: block;
-  margin: 370px auto 130px;
+  margin: 230px auto 130px;
   animation-delay: 1s;
   animation-duration: 2s;
   animation-name: logo;

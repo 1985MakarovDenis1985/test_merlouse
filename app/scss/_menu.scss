@@ -9,6 +9,9 @@
   background: black;
   border-top: 5px solid red;
   border-bottom: 5px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content:  space-around;
   @media screen and (max-width: 1440px) {
     width: 1440px;
   }
@@ -20,9 +23,14 @@
   width: 380px;
   height: 130px;
   background-size: cover;
+  border-left: 3px solid black;
   @media screen and (max-width: 1440px) {
     width: 284px;
   }
+}
+
+.menu_item:first-child{
+  border-left: none;
 }
 
 .menu_item:hover > .menu_second_item{
@@ -57,7 +65,7 @@
 .menu_first {
   background-image: url("../img/breakfast_menu.png");
   position: relative;
-  // z-index: 10000;
+  z-index: 10000;
 }
 //
 
@@ -75,12 +83,11 @@
 
 .menu_fifth {
   background-image: url("../img/coffee_menu.png");
-  width: 383px;
 }
 
 .menu_box_wrap {
   width: 1920px;
-  height: 500px;
+  height: 400px;
   background-image: url("../img/footer.png");
   position: absolute;
   z-index: 10000 !important;
