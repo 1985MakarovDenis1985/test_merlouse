@@ -48,28 +48,12 @@
   @import "_animation_menu_1";
   @import "animation_2";
 
-  // .submenu{
-  //   width: 380px;
-  //   height: 200px;
-  //   // background: yellow;
-  //   position: absolute;
-  //   margin-top: 135px;
-  //   margin-left: -400px;
-  //   transform: skewX(-55deg);
-  //   transition: 1s;
-  // }
-  // .submenu > li{
-  //   width: 380px;
-  //   height: 50px;
-  //   border: 1px solid black;
-  //   transform: skewX(55deg);
-  //   transition: 1s;
-  // }
-  //
-  // .menu_item:hover > .submenu{
-  //   margin-left: 0px;
-  //   transform: skewX(0deg);
-  // }
-  // .menu_item:hover > .submenu > li{
-  //   transform: skewX(0deg);
-  // }
+
+.undermenu{
+  width: 1920px;
+  height: 500px;
+  // background: red;
+  margin-top: 140px;
+  z-index: 1000;
+  position: absolute;
+}
