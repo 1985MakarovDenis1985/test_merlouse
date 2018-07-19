@@ -56,4 +56,10 @@
   margin-top: 140px;
   z-index: 1000;
   position: absolute;
+  @media screen and (max-width: 1440px){
+    width: 1440px !important;
+  }
+  @media screen and (max-width: 1024px){
+    width: 1024px !important;
+  }
 }
