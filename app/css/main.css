@@ -100,7 +100,7 @@ a {
 
 .header_nav_mobile {
   font-family: 'Montserrat-Medium';
-  font-size: 25pt;
+  font-size: 19pt;
   width: 110px;
   height: 40px;
   cursor: pointer;
@@ -128,9 +128,9 @@ a {
   position: absolute;
   margin-left: -50px;
   margin-top: 0px;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
   z-index: 100;
 }
 
@@ -335,6 +335,7 @@ a {
   animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
+  overflow: hidden;
 }
 
 @-webkit-keyframes menu {
@@ -359,6 +360,122 @@ a {
     height: 500px;
     opacity: 1;
   }
+}
+
+.undermenu {
+  width: 1920px;
+  height: 400px;
+  margin-top: 140px;
+  z-index: 1000;
+  position: absolute;
+}
+
+.menu_425_box {
+  width: 425px;
+  height: 350px;
+  background-image: url(../img/mob_bg.png);
+  display: none;
+}
+
+.menu_425 {
+  width: 425px;
+  height: 70px;
+  padding-top: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  -webkit-animation-name: menu_425;
+  animation-name: menu_425;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  color: white;
+  height: 0px;
+  border-bottom: 5px solid red;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  cursor: pointer;
+  -webkit-transform: scaleX(0.01);
+  -ms-transform: scaleX(0.01);
+  transform: scaleX(0.01);
+  -webkit-transition: .7s;
+  -o-transition: .7s;
+  transition: .7s;
+  font-family: 'Montserrat-ExtraLight';
+  text-align: center;
+  font-size: 17pt;
+}
+
+.menu_425:first-child {
+  border-top: 5px solid red;
+}
+
+.item_425_2 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.item_425_3 {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.item_425_4 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.item_425_5 {
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+@-webkit-keyframes menu_425 {
+  0% {
+    height: 0px;
+  }
+
+  30% {
+    height: 70px;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+  }
+
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    border-left: none;
+    border-right: none;
+    height: 70px;
+  }
+}
+
+@keyframes menu_425 {
+  0% {
+    height: 0px;
+  }
+
+  30% {
+    height: 70px;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+  }
+
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    border-left: none;
+    border-right: none;
+    height: 70px;
+  }
+}
+
+.menu_425:hover {
+  background: rgba(0, 0, 0, 0);
 }
 
 .menu_first_item {
@@ -802,22 +919,6 @@ a {
   font-size: 14pt;
 }
 
-.undermenu {
-  width: 1920px;
-  height: 400px;
-  margin-top: 140px;
-  z-index: 1000;
-  position: absolute;
-}
-
-.menu_425_item {
-  width: 425px;
-  height: 50px;
-  background: red;
-  position: absolute;
-  z-index: 10000000000000000;
-}
-
 @media screen and (max-width: 1440px) {
   .main_box {
     width: 1440px;
@@ -831,6 +932,7 @@ a {
   .header {
     width: 1440px;
     height: 600px;
+    background-size: cover;
   }
 
   .header_logo {
@@ -851,6 +953,10 @@ a {
 
   .menu_box_wrap {
     width: 1440px;
+  }
+
+  .undermenu {
+    width: 1440px !important;
   }
 
   .p_picture {
@@ -888,10 +994,6 @@ a {
 
   .cost_box_right {
     font-size: 11pt;
-  }
-
-  .undermenu {
-    width: 1440px !important;
   }
 }
 
@@ -932,6 +1034,10 @@ a {
     width: 202px;
   }
 
+  .undermenu {
+    width: 1024px !important;
+  }
+
   .p {
     font-size: 17pt;
   }
@@ -967,10 +1073,6 @@ a {
 
   .cost_box {
     width: 1024px;
-  }
-
-  .undermenu {
-    width: 1024px !important;
   }
 }
 
@@ -1102,24 +1204,24 @@ a {
   }
 
   .menu_box_wrap {
-    width: 425px;
+    display: none;
   }
 
   .undermenu {
     width: 425px !important;
   }
+
+  .menu_425_box {
+    display: block;
+  }
+
+  .menu_425 {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 375px) {
   .main_box {
-    width: 375px;
-  }
-
-  .wrap_header {
-    width: 375px;
-  }
-
-  .header {
     width: 375px;
   }
 }
