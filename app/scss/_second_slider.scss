@@ -1,0 +1,311 @@
+//
+.second_slider_box{
+  max-width: 1920px;
+  height: 500px;
+  @media screen and (max-width: 425px){
+    display: none;
+  }
+}
+
+
+.over_second_slider_line{
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 1920px;
+  height: 170px;
+  background-image: url(../img/footer.png);
+  border-top: 5px solid red;
+  border-bottom: 5px solid red;
+  margin-top: 4px;
+  @media screen and (max-width: 768px){
+    margin-top: 54px;
+  }
+  @media screen and (max-width: 768px){
+    margin-top: 55px;
+  }
+}
+
+.over_second_slider_line_text{
+  font-size: 41pt;
+  line-height: 60px;
+}
+
+
+
+.second_slider{
+  height: 770px;
+  background-image: url(../img/footer.png);
+  border-bottom: 5px solid red;
+  @media screen and (max-width: 1024px){
+    height: 650px;
+  }
+  @media screen and (max-width: 768px){
+    height: 550px;
+  }
+}
+
+.second_slider_left,
+.second_slider_right{
+  height: 500px;
+  width: 55%;
+  // background-image: url(../img/Cook_2.png);
+  // background-size: cover;
+  background-position: center ;
+  float: left;
+  overflow: hidden;
+  transition: 1s;
+}
+.second_slider_left{
+  position: absolute;
+  border-bottom: 5px solid red;
+  @media screen and (min-width: 1920px){
+    width: 1055px;
+  }
+  @media screen and (max-width: 1440px){
+    width: 900px;
+  }
+  @media screen and (max-width: 1024px){
+    width: 700px;
+    height: 380px;
+  }
+  @media screen and (max-width: 768px){
+    height: 280px;
+    width: 550px;
+  }
+}
+
+.slider_left_line{
+  height: 100px;
+  width: 100%;
+  background-image: url(../img/Cook_2.png);
+  background-size: cover;
+  transition: 1s;
+  opacity: 0;
+  z-index: 10;
+  position: absolute;
+}
+.slider_left_line_second{
+  background-image: url(../img/Cook_1.png);
+  z-index: 1;
+}
+.slider_left_line_third{
+  background-image: url(../img/Cook_3.png);
+  z-index: 1;
+}
+
+.second_slider_left_line_1{
+  background-position: 0 -70px;
+}
+.second_slider_left_line_2{
+  background-position: 0 -170px;
+  margin-top: 100px;
+  transition-delay: 0.3s;
+}
+.second_slider_left_line_3{
+  background-position: 0 -270px;
+    transition-delay: 0.6s;
+    margin-top: 200px;
+}
+.second_slider_left_line_4{
+  background-position: 0 -370px;
+  transition-delay: 0.8s;
+  margin-top: 300px;
+}
+.second_slider_left_line_5{
+  background-position: 0 -470px;
+    transition-delay: 1s;
+    margin-top: 400px;
+}
+
+
+
+.second_slider_left_line_6{
+  background-position: 0 0px;
+}
+.second_slider_left_line_7{
+  background-position: 0 -100px;
+  transition-delay: 0.3s;
+  margin-top: 100px;
+}
+.second_slider_left_line_8{
+  background-position: 0 -200px;
+    transition-delay: 0.6s;
+    margin-top: 200px;
+}
+.second_slider_left_line_9{
+  background-position: 0 -300px;
+  transition-delay: 0.8s;
+  margin-top: 300px;
+}
+.second_slider_left_line_10{
+  background-position: 0 -400px;
+    transition-delay: 1s;
+    margin-top: 400px;
+}
+
+.second_slider_right{
+  width: 45%;
+  height: 505px;
+  background-position:300px 0px;
+  background-image: none;
+  float: right;
+  box-sizing: border-box;
+  position: absolute;
+  color: white;
+  transition: 1s;
+  opacity: 0;
+  margin-left: 1055px;
+  font-family: 'Montserrat-Regular';
+  padding: 70px;
+  padding-right: 15px;
+  font-size: 55px;
+  background: rgba(0,0,0,0.6);
+  border-bottom: 5px solid red;
+  @media screen and (min-width: 1920px){
+    width: 865px;
+  }
+  @media screen and (max-width: 1440px){
+    width: 540px;
+    margin-left: 900px;
+  }
+  @media screen and (max-width: 1024px){
+    width: 325px;
+    height: 385px;
+    margin-left: 700px;
+  }
+  @media screen and (max-width: 768px){
+    width: 218px;
+    height: 285px;
+    margin-left: 550px;
+    padding: 20px;
+  }
+}
+
+.h_text_first{
+  @media screen and(max-width: 1024px){
+    font-size: 28px;
+  }
+}
+
+.h_text_second{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 35px;
+  @media screen and(max-width: 1440px){
+    font-size: 28px;
+  }
+  @media screen and(max-width: 1024px){
+    font-size: 21px;
+  }
+  @media screen and(max-width: 768px){
+    font-size: 19px;
+    margin-top: 20px;
+  }
+}
+.h_text_third{
+  margin-top: 10px;
+  font-size: 35pt;
+  @media screen and(max-width: 1440px){
+    font-size: 28px;
+  }
+  @media screen and(max-width: 1024px){
+    font-size: 15px;
+  }
+  @media screen and(max-width: 768px){
+    font-size: 11px;
+  }
+}
+
+
+input{
+  display: none;
+}
+
+label{
+  position: absolute;
+}
+.label_text{
+  font-family: 'Montserrat-ExtraLight';
+  font-size: 21pt;
+  color: #6e4a2b;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+
+
+.label_one{
+  margin-top: -50px;
+  margin-left: 450px;
+  @media screen and (max-width: 1440px){
+    margin-left: 350px;
+  }
+  @media screen and (max-width: 1024px){
+    margin-left: 150px;
+  }
+  @media screen and (max-width: 768px){
+    margin-left: 100px;
+  }
+}
+.label_two{
+  margin-top: -50px;
+  margin-left: 850px;
+  @media screen and (max-width: 1440px){
+    margin-left: 650px;
+  }
+  @media screen and (max-width: 1024px){
+    margin-left: 430px;
+  }
+  @media screen and (max-width: 768px){
+    margin-left: 290px;
+  }
+}
+.label_three{
+  margin-top: -50px;
+  margin-left: 1350px;
+  @media screen and (max-width: 1440px){
+    margin-left: 960px;
+  }
+  @media screen and (max-width: 1024px){
+    margin-left: 750px;
+  }
+  @media screen and (max-width: 768px){
+    margin-left: 560px;
+  }
+}
+
+#first:checked ~ .second_slider_right_one{
+  opacity: 1;
+}
+#second:checked ~ .second_slider_right_two{
+  opacity: 1;
+}
+#third:checked ~ .second_slider_right_three{
+  opacity: 1;
+}
+
+
+
+
+#first:checked ~ .second_slider_left .slider_left_line{
+  opacity: 1;
+}
+
+
+#second:checked ~ .second_slider_left .slider_left_line_second{
+  opacity: 1;
+}
+
+#third:checked ~ .second_slider_left .slider_left_line_third{
+  opacity: 1;
+}
+
+#first:checked ~ .label_one > .label_text_one{
+  text-shadow: 5px 5px 3px;
+}
+#second:checked ~ .label_two > .label_text_two{
+  text-shadow:  5px 5px 3px;
+}
+#third:checked ~ .label_three > .label_text_three{
+  text-shadow:  5px 5px 3px;
+}

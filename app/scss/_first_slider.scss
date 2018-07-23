@@ -7,7 +7,7 @@
   margin-top: 500px;
   animation-name: slider;
   animation-timing-function: ease-in-out;
-  animation-duration: 5s;
+  animation-duration: 4s;
   border-top: 5px solid red;
   animation-fill-mode: forwards;
   // animation-delay: 2s;
@@ -38,12 +38,14 @@
   }
 }
 
-.overslider_line_text{
+.overslider_line_text,
+.over_second_slider_line_text{
   text-align: center;
   font-size: 21pt;
   color: #6e4a2b;
   font-family: 'Montserrat-ExtraLight';
   letter-spacing: 13px;
+  line-height: 20px;
 }
 
 
