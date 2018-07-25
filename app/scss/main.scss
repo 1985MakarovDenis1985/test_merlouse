@@ -48,6 +48,39 @@
   @import "animation_menu";
   @import "first_slider";
   @import "second_slider";
+  @import "third_slider";
+
+
+
+
+  @mixin bold_text {
+    font-family: 'Gilroyextrabold';
+    font-size: 60pt;
+    color: black;
+  }
+
+  @mixin light_text {
+    font-family: 'Gilroylight';
+    font-size: 60pt;
+    color: black;
+  }
+  @mixin br {
+    border: 1px solid black
+  }
+  @mixin button {
+    font-family: 'Gilroylight';
+    font-weight: 700;
+    width: 240px;
+    height: 45px;
+    background: #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #000;
+    outline: 0;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: 0.5s
+  }
 
 
 

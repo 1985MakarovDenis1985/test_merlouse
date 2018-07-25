@@ -1,7 +1,13 @@
 //
 .second_slider_box{
   max-width: 1920px;
-  height: 500px;
+  height: 675px;
+  @media screen and (max-width: 1024px){
+    height: 555px;
+  }
+  @media screen and (max-width: 768px){
+    height: 555px;
+  }
   @media screen and (max-width: 425px){
     display: none;
   }
@@ -33,14 +39,14 @@
 
 
 .second_slider{
-  height: 770px;
+  height: 675px;
   background-image: url(../img/footer.png);
-  border-bottom: 5px solid red;
+  // border-bottom: 5px solid red;
   @media screen and (max-width: 1024px){
-    height: 650px;
+    height: 555px;
   }
   @media screen and (max-width: 768px){
-    height: 550px;
+    height: 455px;
   }
 }
 
@@ -226,16 +232,19 @@ label{
 }
 .label_text{
   font-family: 'Montserrat-ExtraLight';
-  font-size: 21pt;
+  font-size: 27pt;
   color: #6e4a2b;
   cursor: pointer;
   transition: 0.5s;
 }
 
-
+.label_one,
+.label_two,
+.label_three{
+  margin-top: -100px;
+}
 
 .label_one{
-  margin-top: -50px;
   margin-left: 450px;
   @media screen and (max-width: 1440px){
     margin-left: 350px;
@@ -248,7 +257,6 @@ label{
   }
 }
 .label_two{
-  margin-top: -50px;
   margin-left: 850px;
   @media screen and (max-width: 1440px){
     margin-left: 650px;
@@ -261,7 +269,6 @@ label{
   }
 }
 .label_three{
-  margin-top: -50px;
   margin-left: 1350px;
   @media screen and (max-width: 1440px){
     margin-left: 960px;
@@ -301,11 +308,11 @@ label{
 }
 
 #first:checked ~ .label_one > .label_text_one{
-  text-shadow: 5px 5px 3px;
+  text-shadow: 5px 5px 5px;
 }
 #second:checked ~ .label_two > .label_text_two{
-  text-shadow:  5px 5px 3px;
+  text-shadow:  5px 5px 5px;
 }
 #third:checked ~ .label_three > .label_text_three{
-  text-shadow:  5px 5px 3px;
+  text-shadow:  5px 5px 5px;
 }

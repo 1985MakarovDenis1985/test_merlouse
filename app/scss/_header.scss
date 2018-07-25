@@ -179,9 +179,9 @@
 }
 
 .header_logo {
-  width: 270px;
+  width: 430px;
   display: block;
-  margin: 230px auto 130px;
+  margin: 190px auto 100px;
   animation-delay: 1s;
   animation-duration: 2s;
   animation-name: logo;
@@ -197,6 +197,10 @@
   }
   @media screen and (max-width: 768px) {
     margin-top: 110px;
+  }
+  @media screen and (max-width: 425px) {
+    transform: scale(0.8);
+    margin-top: 70px;
   }
 }
 @keyframes logo {
@@ -226,11 +230,11 @@
   cursor: pointer;
   outline: none;
   transition: 0.5s;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     margin-top: -40px !important;
   }
   @media screen and (max-width: 768px) {
-    margin-top: -60px !important;
+    margin-top: -80px !important;
   }
 }
 
