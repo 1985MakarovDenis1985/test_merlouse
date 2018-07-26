@@ -16,7 +16,8 @@
   // border-top: 5px solid red;
   @media screen and (max-width: 425px) {
     margin-top: 0px;
-    animation-name: s;
+    animation-name: stop;
+    border-top: none;
   }
   @media screen and (max-width: 375px) {
   width: 425px !important;

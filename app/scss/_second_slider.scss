@@ -6,7 +6,7 @@
     height: 555px;
   }
   @media screen and (max-width: 768px){
-    height: 555px;
+    height: 455px;
   }
   @media screen and (max-width: 425px){
     display: none;
@@ -236,6 +236,9 @@ label{
   color: #6e4a2b;
   cursor: pointer;
   transition: 0.5s;
+  @media screen and (max-width: 768px){
+    font-size: 21pt;
+    }
 }
 
 .label_one,
