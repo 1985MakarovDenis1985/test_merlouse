@@ -32,7 +32,9 @@
   font-family: 'Montserrat-Light';
   src: url("../fonts/Montserrat/Montserrat-Light.ttf");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  border: 1px solid red;
+}
 
   a{
   	text-decoration: none;
@@ -80,38 +82,3 @@
     cursor: pointer;
     transition: 0.5s
   }
-
-
-
-// .undermenu{
-//   width: 1920px;
-//   height: 400px;
-//   // background: red;
-//   margin-top: 140px;
-//   z-index: 1000;
-//   position: absolute;
-//   @media screen and (max-width: 1440px){
-//     width: 1440px !important;
-//   }
-//   @media screen and (max-width: 1024px){
-//     width: 1024px !important;
-//   }
-//   @media screen and (max-width: 425px){
-//     width: 425px !important;
-//   }
-// }
-
-
-// MENU_425
-//
-// .menu_425_item{
-//   width: 425px;
-//   height: 50px;
-//   background: red;
-//   position: absolute;
-//   z-index: 10000000000000000;
-//   display: none;
-//   @media screen and (max-width: 425px){
-//     display: block;
-//   }
-// }

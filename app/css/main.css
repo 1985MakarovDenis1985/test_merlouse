@@ -38,6 +38,7 @@
   src: url("../fonts/Montserrat/Montserrat-Light.ttf");
   font-weight: normal;
   font-style: normal;
+  border: 1px solid red;
 }
 
 a {
@@ -1651,154 +1652,161 @@ ul > li.slick-active:before {
   font-size: 25pt;
 }
 
-.hot_drink {
+.hotdrink_wrap {
   width: 1920px;
-  height: 200px;
-  background: black;
+  height: 700px;
+  border: 1px solid red;
+  z-index: 1;
+  position: absolute;
+  background-image: url(../img/footer.png);
+}
+
+.hot_main_line {
+  width: 1920px;
+  height: 210px;
   border-top: 5px solid red;
   border-bottom: 5px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
 .hot_drink_menu_box {
-  display: inline-block;
-  margin-right: -5px;
-  width: 640px;
-  height: 200px;
-  background-size: cover;
-}
-
-.hot_drink_menu_box > p {
-  display: block;
-  position: absolute;
-  width: 640px;
-  height: 200px;
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-  font-family: 'Montserrat-ExtraLight';
-  font-size: 45pt;
-  text-align: center;
-  padding-top: 70px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  cursor: pointer;
-  -webkit-transition: background 0.5s;
-  -o-transition: background 0.5s;
-  transition: background 0.5s;
+  width: 33%;
+  height: inherit;
+  border: 1px solid black;
 }
 
-.hot_drink_menu_box:hover > p {
+.menu_box {
+  background-image: url(../img/vine.png);
+  background-size: cover;
+  background-position: 0 -50px;
+}
+
+.hot_drink_menu_text {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Montserrat-Light';
+  text-align: center;
+  padding-top: 60px;
+  font-size: 51pt;
+  width: 100%;
+  height: inherit;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hot_drink_menu_text:hover {
   background: rgba(0, 0, 0, 0.1);
 }
 
-.hot_drink_first {
-  background-image: url("../img/vine.png");
+.hot_drink_menu_text:hover > .hot_menu_item {
+  margin-left: 0px;
 }
 
-.hot_drink_second {
-  background-image: url("../img/ginnes.png");
-}
-
-.hot_drink_third {
-  background-image: url("../img/visky.png");
-}
-
-.under_drink_menu_line {
-  max-width: 1920px;
-  height: 400px;
-  background-image: url("../img/footer.png");
-  background-size: 2210px;
-  background-position: -762px -480px;
-  border-bottom: 5px solid red;
-}
-
-.hot_drink_submenu {
-  width: inherit;
+.hot_menu_item {
   height: 100px;
-  position: absolute;
-  margin-top: 205px;
-  margin-left: -700px;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  transition-timing-function: linear;
-  color: white;
-}
-
-.submenu_2 {
-  margin-top: 305px;
-  background: green;
-  -webkit-transition-delay: 0.2s;
-  -o-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}
-
-.submenu_3 {
-  margin-top: 405px;
-  background: yellow;
-  -webkit-transition-delay: 0.4s;
-  -o-transition-delay: 0.4s;
-  transition-delay: 0.4s;
-}
-
-.submenu_4 {
-  margin-top: 505px;
-  background: grey;
-  -webkit-transition-delay: 0.6s;
-  -o-transition-delay: 0.6s;
-  transition-delay: 0.6s;
-}
-
-.hot_drink_menu_box:hover > .hot_drink_submenu {
-  margin-left: 0;
-  opacity: 1;
-}
-
-.hot_drink_submenu_item {
+  width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  font-size: 35pt;
-  font-family: 'Montserrat-ExtraLight';
-  text-align: center;
-  padding-top: 25px;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  cursor: pointer;
+  margin-left: -650px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
   z-index: 1000;
 }
 
-.hot_drink_submenu_item:hover {
+.hot_menu_item:hover > .hot_main_img {
+  opacity: 1;
+}
+
+.item_text {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  font-family: 'Montserrat-ExtraLight';
+  font-size: 41pt;
+  padding-top: 15px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.item_text:hover {
   background: rgba(0, 0, 0, 0.1);
 }
 
-.hot_drink_submenu_img {
+.top_item {
+  margin-top: 85px;
+}
+
+.hot_main_img {
   position: absolute;
-  width: 1920px;
+  z-index: -1;
+  width: 100%;
   height: 400px;
-  z-index: 10;
   background: red;
+  margin-left: -4px;
+  opacity: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  background-size: cover;
+  background-position: 0 -220px;
 }
 
-.submenu_img_2 {
+.img_1 {
   margin-top: -100px;
-  background: yellow;
+  background-image: url(../img/wine_1.jpeg);
 }
 
-.submenu_img_3 {
+.img_2 {
   margin-top: -200px;
-  background: green;
+  background-image: url(../img/wine_2.jpeg);
 }
 
-.submenu_img_4 {
+.img_3 {
   margin-top: -300px;
-  background: grey;
+  background-image: url(../img/wine_3.jpeg);
+}
+
+.img_4 {
+  margin-top: -400px;
+  background-image: url(../img/wine_4.jpeg);
+}
+
+.hot_clear {
+  height: 1px;
+}
+
+.item_delay_2 {
+  -webkit-transition-delay: .2s;
+  -o-transition-delay: .2s;
+  transition-delay: .2s;
+}
+
+.item_delay_3 {
+  -webkit-transition-delay: .4s;
+  -o-transition-delay: .4s;
+  transition-delay: .4s;
+}
+
+.item_delay_4 {
+  -webkit-transition-delay: .6s;
+  -o-transition-delay: .6s;
+  transition-delay: .6s;
 }
 
 .hot_menu_425 {
@@ -2061,24 +2069,6 @@ ul > li.slick-active:before {
     margin-left: 150px;
     margin-top: -25px;
   }
-
-  .hot_drink {
-    width: 1440px;
-  }
-
-  .hot_drink_menu_box {
-    width: 480px;
-  }
-
-  .hot_drink_menu_box > p {
-    width: 480px;
-    font-size: 35pt;
-    padding-top: 90px;
-  }
-
-  .hot_drink_submenu_img {
-    width: 1440px;
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -2323,41 +2313,6 @@ ul > li.slick-active:before {
 
   .text_white_botton {
     margin-top: 50px;
-  }
-
-  .hot_drink {
-    width: 1024px;
-  }
-
-  .hot_drink_menu_box {
-    width: 340px;
-  }
-
-  .hot_drink_menu_box > p {
-    width: 340px;
-    font-size: 29pt;
-  }
-
-  .hot_drink_submenu_img {
-    width: 1024px;
-  }
-}
-
-@media screen and (max-width: 786px) {
-  .hot_drink_submenu {
-    margin-top: 155px;
-  }
-
-  .submenu_2 {
-    margin-top: 255px;
-  }
-
-  .submenu_3 {
-    margin-top: 355px;
-  }
-
-  .submenu_4 {
-    margin-top: 455px;
   }
 }
 
@@ -2605,33 +2560,6 @@ ul > li.slick-active:before {
   .text_white_botton {
     margin-top: 10px !important;
   }
-
-  .hot_drink {
-    width: 768px;
-    height: 150px;
-  }
-
-  .hot_drink_menu_box {
-    width: 255px;
-    height: 150px;
-  }
-
-  .hot_drink_menu_box > p {
-    width: 255px;
-    height: 150px;
-    font-size: 21pt;
-    padding-top: 65px;
-  }
-
-  .hot_drink_submenu_img {
-    width: 768px;
-  }
-}
-
-@media screen and (max-width: 455px) {
-  .hot_drink {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 425px) {
@@ -2794,10 +2722,6 @@ ul > li.slick-active:before {
 
   .text_white_botton {
     margin-top: 40px !important;
-  }
-
-  .under_drink_menu_line {
-    height: 425px;
   }
 
   .hot_menu_425 {
