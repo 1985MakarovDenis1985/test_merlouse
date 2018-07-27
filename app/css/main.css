@@ -1655,10 +1655,11 @@ ul > li.slick-active:before {
 .hotdrink_wrap {
   width: 1920px;
   height: 700px;
-  border: 1px solid red;
+  border-bottom: 5px solid red;
   z-index: 1;
   position: absolute;
   background-image: url(../img/footer.png);
+  overflow: hidden;
 }
 
 .hot_main_line {
@@ -1675,6 +1676,7 @@ ul > li.slick-active:before {
   flex-direction: row;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  background: black;
 }
 
 .hot_drink_menu_box {
@@ -1685,10 +1687,23 @@ ul > li.slick-active:before {
   border: 1px solid black;
 }
 
+.hot_drink_menu_box:hover ~ .drinks_text {
+  opacity: 0;
+}
+
 .menu_box {
   background-image: url(../img/vine.png);
   background-size: cover;
   background-position: 0 -50px;
+}
+
+.menu_box_2 {
+  background-image: url(../img/ginnes.png);
+}
+
+.menu_box_3 {
+  background-image: url(../img/visky.png);
+  background-position: 0 -110px;
 }
 
 .hot_drink_menu_text {
@@ -1697,7 +1712,7 @@ ul > li.slick-active:before {
   color: white;
   font-family: 'Montserrat-Light';
   text-align: center;
-  padding-top: 60px;
+  padding-top: 70px;
   font-size: 51pt;
   width: 100%;
   height: inherit;
@@ -1711,6 +1726,10 @@ ul > li.slick-active:before {
 
 .hot_drink_menu_text:hover > .hot_menu_item {
   margin-left: 0px;
+}
+
+.hot_drink_menu_text:hover > .hot_menu_item > p {
+  opacity: 1;
 }
 
 .hot_menu_item {
@@ -1727,6 +1746,7 @@ ul > li.slick-active:before {
 
 .hot_menu_item:hover > .hot_main_img {
   opacity: 1;
+  visibility: visible;
 }
 
 .item_text {
@@ -1734,12 +1754,13 @@ ul > li.slick-active:before {
   height: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
   font-family: 'Montserrat-ExtraLight';
   font-size: 41pt;
   padding-top: 15px;
+  opacity: 0;
   cursor: pointer;
   background: rgba(0, 0, 0, 0.5);
 }
@@ -1748,23 +1769,84 @@ ul > li.slick-active:before {
   background: rgba(0, 0, 0, 0.1);
 }
 
-.top_item {
-  margin-top: 85px;
-}
-
 .hot_main_img {
   position: absolute;
   z-index: -1;
   width: 100%;
-  height: 400px;
+  height: 480px;
   background: red;
   margin-left: -4px;
   opacity: 0;
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
+  visibility: hidden;
   background-size: cover;
   background-position: 0 -220px;
+}
+
+.hot_drink_menu_box:hover ~ .drinks_text {
+  visibility: hidden;
+}
+
+.drinks_text {
+  font-size: 55pt;
+  position: absolute;
+  z-index: 1;
+  margin-top: 400px;
+  font-family: 'Montserrat-ExtraLight';
+  color: #633209;
+  text-align: center;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  visibility: visible;
+}
+
+.hot_clear {
+  height: 1px;
+}
+
+.top_item {
+  margin-top: 75px;
+}
+
+.item_1 {
+  margin-left: -1500px;
+}
+
+.item_2 {
+  margin-left: 1500px;
+}
+
+.item_3 {
+  margin-left: -1500px;
+}
+
+.item_4 {
+  margin-left: 1500px;
+}
+
+.item_5 {
+  margin-left: 650px;
+}
+
+.item_delay_2 {
+  -webkit-transition-delay: .2s;
+  -o-transition-delay: .2s;
+  transition-delay: .2s;
+}
+
+.item_delay_3 {
+  -webkit-transition-delay: .4s;
+  -o-transition-delay: .4s;
+  transition-delay: .4s;
+}
+
+.item_delay_4 {
+  -webkit-transition-delay: .6s;
+  -o-transition-delay: .6s;
+  transition-delay: .6s;
 }
 
 .img_1 {
@@ -1787,26 +1869,57 @@ ul > li.slick-active:before {
   background-image: url(../img/wine_4.jpeg);
 }
 
-.hot_clear {
-  height: 1px;
+.main_img_second {
+  margin-left: -645px;
 }
 
-.item_delay_2 {
-  -webkit-transition-delay: .2s;
-  -o-transition-delay: .2s;
-  transition-delay: .2s;
+.main_img_third {
+  margin-left: -1283px;
 }
 
-.item_delay_3 {
-  -webkit-transition-delay: .4s;
-  -o-transition-delay: .4s;
-  transition-delay: .4s;
+.img_5,
+.img_9 {
+  margin-top: -100px;
+  background-image: url(../img/Beer_4.jpg);
+  background-position: 0 -280px;
 }
 
-.item_delay_4 {
-  -webkit-transition-delay: .6s;
-  -o-transition-delay: .6s;
-  transition-delay: .6s;
+.img_6,
+.img_10 {
+  margin-top: -200px;
+  background-image: url(../img/Beer_1.jpeg);
+  background-position: 0 -300px;
+}
+
+.img_7,
+.img_11 {
+  margin-top: -300px;
+  background-image: url(../img/Beer_2.jpeg);
+  background-position: 0 0px;
+}
+
+.img_8,
+.img_12 {
+  margin-top: -400px;
+  background-image: url(../img/Beer_3.jpeg);
+  background-position: 0 -400px;
+}
+
+.img_9 {
+  background-image: url(../img/hot_1.jpg);
+}
+
+.img_10 {
+  background-image: url(../img/hot_2.jpg);
+}
+
+.img_11 {
+  background-image: url(../img/hot_3.jpg);
+  background-position: 0 -170px;
+}
+
+.img_12 {
+  background-image: url(../img/hot_4.jpg);
 }
 
 .hot_menu_425 {
@@ -2069,6 +2182,28 @@ ul > li.slick-active:before {
     margin-left: 150px;
     margin-top: -25px;
   }
+
+  .hotdrink_wrap {
+    width: 1440px;
+  }
+
+  .hot_main_line {
+    width: 1440px;
+  }
+
+  .main_img_second {
+    width: 1440px;
+    margin-left: -485px;
+  }
+
+  .main_img_third {
+    width: 1440px;
+    margin-left: -962px;
+  }
+
+  .img_8 {
+    background-position: 0 -200px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -2313,6 +2448,58 @@ ul > li.slick-active:before {
 
   .text_white_botton {
     margin-top: 50px;
+  }
+
+  .hotdrink_wrap {
+    width: 1024px;
+    height: 693px;
+  }
+
+  .hot_main_line {
+    width: 1024px;
+  }
+
+  .menu_box {
+    background-position: 0 0px;
+  }
+
+  .menu_box_2 {
+    background-position: 0px 0px;
+    background-size: 100%;
+  }
+
+  .menu_box_3 {
+    background-position: 0px 0px;
+    background-size: 100%;
+  }
+
+  .hot_drink_menu_text {
+    font-size: 27pt;
+    padding-top: 85px;
+  }
+
+  .item_text {
+    font-size: 25pt;
+    padding-top: 27px;
+  }
+
+  .main_img_first {
+    background-position: 0 0px;
+  }
+
+  .main_img_second {
+    width: 1024px;
+    margin-left: -345px;
+    background-position: 0 -100px;
+  }
+
+  .img_7,
+  .img_11 {
+    background-position: 0 0px;
+  }
+
+  .img_12 {
+    background-position: 0 -200px;
   }
 }
 
@@ -2560,6 +2747,41 @@ ul > li.slick-active:before {
   .text_white_botton {
     margin-top: 10px !important;
   }
+
+  .hotdrink_wrap {
+    width: 768px;
+  }
+
+  .hot_main_line {
+    width: 768px;
+  }
+
+  .menu_box {
+    background-position: -100px 0px;
+  }
+
+  .menu_box_2 {
+    background-size: 130%;
+  }
+
+  .menu_box_3 {
+    background-size: 130%;
+  }
+
+  .img_9 {
+    background-position: 300px -200px;
+    background-size: 80%;
+  }
+
+  .img_10 {
+    background-position: 300px -80px;
+    background-size: 70%;
+  }
+
+  .img_11 {
+    background-position: 400px 0px;
+    background-size: 60%;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -2722,6 +2944,10 @@ ul > li.slick-active:before {
 
   .text_white_botton {
     margin-top: 40px !important;
+  }
+
+  .hotdrink_wrap {
+    display: none;
   }
 
   .hot_menu_425 {

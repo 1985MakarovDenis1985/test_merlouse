@@ -15,11 +15,24 @@
 .hotdrink_wrap{
   width: 1920px;
   height: 700px;
-  border: 1px solid red;
+  border-bottom: 5px solid red;
   z-index: 1;
   position: absolute;
   background-image: url(../img/footer.png);
-  // overflow: hidden;
+  overflow: hidden;
+  @media screen and (max-width: 1440px){
+    width: 1440px;
+  }
+  @media screen and (max-width: 1024px){
+    width: 1024px;
+    height: 693px;
+  }
+  @media screen and (max-width: 768px){
+    width: 768px;
+  }
+  @media screen and (max-width: 425px){
+    display: none;
+  }
 }
 
 .hot_main_line{
@@ -32,6 +45,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  background: black;
+  @media screen and (max-width: 1440px){
+    width: 1440px;
+  }
+  @media screen and (max-width: 1024px){
+    width: 1024px;
+  }
+  @media screen and (max-width: 768px){
+    width: 768px;
+  }
 }
 
 .hot_drink_menu_box{
@@ -39,11 +62,41 @@
   width: 33%;
   height: inherit;
   border: 1px solid black;
+  &:hover ~ .drinks_text{
+    opacity: 0;
+  }
 }
 .menu_box{
   background-image: url(../img/vine.png);
   background-size: cover;
   background-position: 0 -50px;
+  @media screen and (max-width: 1024px){
+    background-position: 0 0px;
+  }
+  @media screen and (max-width: 768px){
+    background-position: -100px 0px;
+  }
+}
+.menu_box_2{
+  background-image: url(../img/ginnes.png);
+  @media screen and (max-width: 1024px){
+    background-position: 0px 0px;
+    background-size: 100%;
+  }
+  @media screen and (max-width: 768px){
+    background-size: 130%;
+  }
+}
+.menu_box_3{
+  background-image: url(../img/visky.png);
+  background-position: 0 -110px;
+  @media screen and (max-width: 1024px){
+    background-position: 0px 0px;
+    background-size: 100%;
+  }
+  @media screen and (max-width: 768px){
+    background-size: 130%;
+  }
 }
 
 .hot_drink_menu_text{
@@ -51,7 +104,7 @@
   color: white;
   font-family: 'Montserrat-Light';
   text-align: center;
-  padding-top: 60px;
+  padding-top: 70px;
   font-size: 51pt;
   width: 100%;
   height: inherit;
@@ -60,10 +113,17 @@
   &:hover{
     background: rgba(0, 0, 0, 0.1);
   }
+  @media screen and (max-width: 1024px){
+    font-size: 27pt;
+    padding-top: 85px;
+  }
 }
 
 .hot_drink_menu_text:hover>.hot_menu_item{
   margin-left: 0px;
+}
+.hot_drink_menu_text:hover>.hot_menu_item > p{
+  opacity: 1;
 }
 
 
@@ -75,9 +135,10 @@
   box-sizing: border-box;
   margin-left: -650px;
   transition: 1s;
-    z-index: 1000;
+  z-index: 1000;
   &:hover>.hot_main_img{
     opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -85,34 +146,95 @@
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  transition: 0.5s;
+  transition: 1s;
   font-family: 'Montserrat-ExtraLight';
   font-size: 41pt;
   padding-top: 15px;
+  opacity: 0;
   cursor: pointer;
   background: rgba(0, 0, 0, 0.5);
   &:hover{
     background: rgba(0, 0, 0, 0.1);
   }
-}
-
-
-.top_item{
-margin-top: 85px;
+  @media screen and (max-width: 1024px){
+    font-size: 25pt;
+    padding-top: 27px;
+  }
 }
 
 .hot_main_img{
   position: absolute;
   z-index: -1;
   width: 100%;
-  height: 400px;
+  height: 480px;
   background: red;
   margin-left: -4px;
   opacity: 0;
   transition: 1s;
+  visibility: hidden;
   background-size: cover;
   background-position: 0 -220px;
 }
+
+
+
+.hot_drink_menu_box{
+  &:hover ~ .drinks_text{
+    visibility: hidden;
+  }
+}
+
+.drinks_text{
+  font-size: 55pt;
+  position: absolute;
+  z-index: 1;
+  margin-top: 400px;
+  font-family: 'Montserrat-ExtraLight';
+  color: #633209;
+  text-align: center;
+  transition: 1s;
+  visibility: visible;
+}
+
+
+
+.hot_clear{
+  height: 1px;
+}
+
+// ITEM IMG
+
+.top_item{
+margin-top: 75px;
+}
+
+.item_1{
+  margin-left: -1500px;
+}
+.item_2{
+  margin-left: 1500px;
+}
+.item_3{
+  margin-left: -1500px;
+}
+.item_4{
+  margin-left: 1500px;
+}
+
+.item_5{
+  margin-left: 650px;
+}
+
+.item_delay_2{
+  transition-delay: .2s;
+}
+.item_delay_3{
+  transition-delay: .4s;
+}
+.item_delay_4{
+  transition-delay: .6s;
+}
+
 .img_1{
   margin-top: -100px;
   background-image: url(../img/wine_1.jpeg);
@@ -130,21 +252,92 @@ margin-top: 85px;
   background-image: url(../img/wine_4.jpeg);
 }
 
-
-.hot_clear{
-  height: 1px;
+.main_img_first{
+  @media screen and (max-width: 1024px){
+  background-position: 0 0px;
+  }
+}
+.main_img_second{
+  margin-left: -645px;
+  @media screen and (max-width: 1440px){
+    width: 1440px;
+    margin-left: -485px;
+  }
+  @media screen and (max-width: 1024px){
+    width: 1024px;
+    margin-left: -345px;
+    background-position: 0 -100px;
+  }
+  // @media screen and (max-width: 768px){
+  //   width: 768px;
+  // }
+}
+.main_img_third{
+  margin-left: -1283px;
+  @media screen and (max-width: 1440px){
+    width: 1440px;
+    margin-left: -962px;
+  }
 }
 
-// ITEM IMG
-.item_delay_2{
-  transition-delay: .2s;
+.img_5,.img_9{
+margin-top: -100px;
+background-image: url(../img/Beer_4.jpg);
+background-position: 0 -280px;
 }
-.item_delay_3{
-  transition-delay: .4s;
+.img_6, .img_10{
+margin-top: -200px;
+background-image: url(../img/Beer_1.jpeg);
+background-position: 0 -300px;
 }
-.item_delay_4{
-  transition-delay: .6s;
+.img_7, .img_11{
+margin-top: -300px;
+background-image: url(../img/Beer_2.jpeg);
+background-position: 0 0px;
+@media screen and (max-width: 1024px){
+  background-position: 0 0px;
+  }
 }
+.img_8, .img_12{
+margin-top: -400px;
+background-image: url(../img/Beer_3.jpeg);
+background-position: 0 -400px;
+}
+.img_8{
+  @media screen and (max-width: 1440px){
+    background-position: 0 -200px;
+    }
+}
+
+.img_9{
+  background-image: url(../img/hot_1.jpg);
+  @media screen and (max-width: 768px){
+    background-position: 300px -200px;
+    background-size: 80%;
+    }
+}
+.img_10{
+  background-image: url(../img/hot_2.jpg);
+  @media screen and (max-width: 768px){
+    background-position: 300px -80px;
+    background-size: 70%;
+    }
+}
+.img_11{
+  background-image: url(../img/hot_3.jpg);
+  background-position: 0 -170px;
+  @media screen and (max-width: 768px){
+    background-position: 400px 0px;
+    background-size: 60%;
+    }
+}
+.img_12{
+  background-image: url(../img/hot_4.jpg);
+  @media screen and (max-width: 1024px){
+    background-position: 0 -200px;
+    }
+}
+
 // ITEM IMG
 
 
