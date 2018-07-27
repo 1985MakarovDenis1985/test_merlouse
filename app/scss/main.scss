@@ -44,6 +44,9 @@
 
 //
 
+html{
+  background-image: url(../img/footer.png);
+}
 
   @import "header";
   @import "menu";
@@ -52,6 +55,7 @@
   @import "second_slider";
   @import "third_slider";
   @import "drink_menu";
+  @import "footer";
 
 
   @mixin bold_text {

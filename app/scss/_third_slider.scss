@@ -87,7 +87,7 @@
   height: 500px !important;
   float: left;
   @media screen and (max-width: 425px){
-    height: 250px !important;
+    height: 150px !important;
   }
 }
 
@@ -129,8 +129,7 @@
   margin-top: 10px;
   margin-left: -25px;
   @media screen and (max-width: 425px){
-    margin-left: -20px;
-    font-size: 35pt;
+    display: none;
   }
 }
 

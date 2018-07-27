@@ -1,0 +1,201 @@
+.footer{
+  width: 1920px;
+  height: 650px;
+  background: grey;
+  box-sizing: border-box;
+  color: white;
+  background-image: url(../img/kitchen.png);
+  margin-top: 705px;
+  @media screen and (max-width: 1440px){
+    width: 1440px;
+  }
+  @media screen and (max-width: 1024px){
+    width: 1024px;
+    margin-top: 698px;
+  }
+  @media screen and (max-width: 768px){
+    width: 768px;
+  }
+  @media screen and (max-width: 425px){
+    width: 425px;
+    margin-top: 425px;
+    border-top: 5px solid red;
+  }
+}
+
+.footer_wrap{
+  position: absolute;
+  z-index: 1;
+  width: 1920px;
+  height: 650px;
+  background: rgba(0,0,0,0.8);
+  @media screen and (max-width: 1440px){
+    width: 1440px;
+  }
+  @media screen and (max-width: 1024px){
+    width: 1024px;
+  }
+  @media screen and (max-width: 768px){
+    width: 768px;
+  }
+  @media screen and (max-width: 425px){
+    width: 425px;
+  }
+}
+
+  .footer_map{
+    z-index: 10;
+    position: absolute;
+    box-sizing: border-box;
+    width: 673px;
+    height: 410px;
+    margin-left: 100px;
+    margin-top: 120px;
+    background-image: url(../img/map.png);
+    background-size: cover;
+    @media screen and (max-width: 1024px){
+      width: 300px;
+      background-position: -170px 0;
+    }
+    @media screen and (max-width: 768px){
+      display: none;
+    }
+  }
+
+    .footer_text_first{
+      position: relative;
+      z-index: 10;
+      font-family: 'Montserrat-Medium';
+      font-size: 30pt;
+      margin-left: 900px;
+      padding-top: 100px;
+      @media screen and (max-width: 1024px){
+        margin-left: 500px;
+      }
+      @media screen and (max-width: 425px){
+        margin-top: 30px !important;
+      }
+    }
+
+    .footer_text_second{
+      position: relative;
+      z-index: 10;
+      font-family: 'Montserrat-Medium';
+      font-size: 18pt;
+      margin-left: 900px;
+      padding-top: 45px;
+      line-height: 30px;
+      @media screen and (max-width: 1024px){
+        font-size: 15pt;
+      }
+      @media screen and (max-width: 425px){
+        font-size: 11pt;
+      }
+    }
+
+    .footer_text_third{
+      position: relative;
+      z-index: 10;
+      font-family: 'Montserrat-Light';
+      font-size: 14pt;
+      margin-left: 900px;
+      padding-top: 30px;
+      line-height: 30px;
+    }
+
+    .footer_text_third>a{
+      color: red;
+    }
+
+    .footer_text_fourth{
+      position: relative;
+      z-index: 10;
+      font-size: 14pt;
+      margin-left: 900px;
+      padding-top: 30px;
+      line-height: 25px;
+      font-family: 'Montserrat-Regular';
+    }
+
+    .footer_text_adress{
+      position: relative;
+      z-index: 10;
+      font-size: 14pt;
+      margin-left: 930px;
+      padding-top: 1px;
+      line-height: 25px;
+      font-family: 'Montserrat-Regular';
+    }
+
+    .footer_text_fifth{
+      position: absolute;
+      z-index: 10;
+      color: white;
+      font-family: 'Montserrat-Light';
+      margin-top: 60px;
+      margin-left: 210px;
+      color: gold;
+      @media screen and (max-width: 1440px){
+        margin-left: 250px;
+        margin-top: 0px;
+      }
+      @media screen and (max-width: 1024px){
+        margin-left: 350px;
+        margin-top: 40px;
+      }
+      @media screen and (max-width: 768px){
+        margin-left: 230px;
+      }
+      @media screen and (max-width: 425px){
+        margin-top: 10px;
+      }
+    }
+
+    .email{
+      text-decoration: underline;
+      transition: 1s;
+      &:hover{
+        color: red;
+      }
+    }
+
+  .footer_text_first,
+  .footer_text_second,
+  .footer_text_third,
+  .footer_text_fourth,
+  .footer_text_adress{
+    @media screen and (max-width: 1024px){
+      margin-left: 500px;
+    }
+    @media screen and (max-width: 768px){
+      margin-left: 170px;
+    }
+    @media screen and (max-width: 425px){
+      margin-left: 30px;
+    }
+  }
+
+
+
+
+
+
+    .footer_text_second{
+      background-image: url(../img/round.png);
+      background-repeat: repeat;
+      -webkit-background-clip: text;
+      background-position: 0px 100px;
+      color: transparent;
+      animation-name: redround;
+      animation-duration: 21s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+    @keyframes redround {
+      0%{
+        background-position: 0px 100px;
+      }
+      100%{
+        background-position: 0px -500px;
+      }
+    }
